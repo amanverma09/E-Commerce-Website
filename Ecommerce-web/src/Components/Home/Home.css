@@ -1,0 +1,31 @@
+/* Hero Section */
+.hero-section {
+  background-color: #f2e8ff;
+  min-height: 80vh;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
+}
+
+.hero-image {
+  max-height: 400px;
+}
+
+/* Offers Section */
+.offer-card {
+  background: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Carousel Dots */
+.hero-carousel .carousel-indicators [data-bs-target] {
+  background-color: orange;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}

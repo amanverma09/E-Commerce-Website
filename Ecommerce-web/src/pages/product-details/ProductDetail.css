@@ -1,0 +1,103 @@
+.product-detail-section {
+  background: #f9fafa;
+}
+
+.main-product-img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.thumb-row {
+  justify-content: center;
+}
+
+.thumb-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.thumb-img:hover,
+.thumb-img.active {
+  border: 2px solid #000;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.qty-box button {
+  width: 35px;
+  height: 35px;
+}
+
+/* Modern size option buttons */
+.option-btn {
+  border: 1px solid #ccc;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Color swatches */
+.color-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.color-swatch:hover {
+  border: 2px solid #000;
+}
+
+/* Tabs */
+.tabs-section .nav-tabs .nav-link {
+  font-weight: 500;
+  color: #444;
+}
+
+.tabs-section .nav-tabs .nav-link.active {
+  color: #000;
+  border-color: #000 #000 #fff;
+}
+
+.review p {
+  margin: 0;
+}
+
+
+.image-container{
+      width: 550px;
+    height: 400px;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}

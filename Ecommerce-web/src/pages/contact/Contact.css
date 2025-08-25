@@ -1,0 +1,101 @@
+.page-banner-section {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  position: relative;
+  color: #fff;
+}
+
+.page-banner-content .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.page-banner-content .breadcrumb {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.page-banner-content .breadcrumb li {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.page-banner-content .breadcrumb li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.page-banner-content .breadcrumb li a:hover {
+  color: #ff9d00;
+}
+
+.page-banner-content .breadcrumb .active {
+  font-weight: 600;
+  color: #ff9d00;
+}
+
+/* contact css */
+.contact-info-box {
+  background-color: #fff8ee; /* light yellowish bg like demo */
+}
+
+.contact-info-box h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.contact-info-box p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-info-box i {
+  font-size: 16px;
+  background-color: #FFF9ED;
+}
+
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: #ffb400;
+  color: #fff;
+}
+
+form .form-control {
+  border-radius: 0;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  padding: 12px;
+  box-shadow: none;
+    background: transparent;
+    color: #b2abab;
+
+}
+
+form .form-control:focus {
+  border-color: #ffb400;
+      color: #b2abab;
+
+}
+
+.btn-dark {
+  border-radius: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+}

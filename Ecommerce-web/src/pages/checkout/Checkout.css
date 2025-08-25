@@ -1,0 +1,85 @@
+.page-banner-section {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  position: relative;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.page-banner-content .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.page-banner-content .breadcrumb {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.page-banner-content .breadcrumb li {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.page-banner-content .breadcrumb li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.page-banner-content .breadcrumb li a:hover {
+  color: #ff9d00;
+}
+
+.page-banner-content .breadcrumb .active {
+  font-weight: 600;
+  color: #ff9d00;
+}
+/* checkout css */
+.checkout-section {
+  background-color: #f5f7f7;
+}
+
+.checkout-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.checkout-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2f4f4f;
+  border-left: 4px solid #97b8bd;
+  padding-left: 10px;
+}
+
+.highlight {
+  color: #97b8bd;
+}
+
+.place-order-btn {
+  background-color: #97b8bd;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #7ea0a5;
+}

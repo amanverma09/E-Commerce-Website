@@ -1,0 +1,91 @@
+.footer-section {
+  background: #f4f1eb;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-top {
+  background: #e9e1f9;
+}
+
+.footer-logo {
+  /* width: 150px; */
+  height: 120px;
+  overflow: hidden;
+}
+.img-div {
+  height: 100px;
+}
+.subscribe-box input {
+  border-radius: 0;
+}
+
+.subscribe-box button {
+  border-radius: 0;
+  font-size: 20px;
+}
+
+.footer-main h6 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-main ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-main ul li:hover {
+  color: #ff9800;
+}
+.product-actions button img,
+svg {
+  vertical-align: middle;
+  color: gray;
+}
+
+.social-icons svg {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  color: #ff9800;
+}
+
+.footer-bottom {
+  background: #fff;
+  font-size: 14px;
+}
+
+.brand-text {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-top {
+    text-align: center;
+  }
+
+  .footer-top .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-main {
+    margin-top: 20px;
+  }
+
+  .footer-main h6 {
+    text-align: center;
+  }
+
+  .subscribe-box {
+    width: 100%;
+    text-align: center;
+  }
+}
