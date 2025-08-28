@@ -13,7 +13,7 @@ const Checkout = () => {
 
   useEffect(() => {
     axios
-      .get("https://e-commerce-website-backend-9cwr.onrender.com/api/cart")
+      .get("https://e-commerce-website-kappa-opal.vercel.app/api/cart")
       .then((res) => setCartItems(res.data))
       .catch((err) => console.error(err));
   }, []);

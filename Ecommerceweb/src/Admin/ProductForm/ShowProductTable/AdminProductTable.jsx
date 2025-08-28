@@ -28,17 +28,17 @@ const AdminProductTable = ({ products, onDelete, onEdit, onView }) => {
                 <tr key={product._id}>
                   <td style={{ display: "flex", gap: "10px" }}>
                     <img
-                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[0]}`}
+                      src={`https://e-commerce-website-kappa-opal.vercel.app/uploads/${product.images[0]}`}
                       alt={product.name}
                       className="product-thumb"
                     />
                     <img
-                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[1]}`}
+                      src={`https://e-commerce-website-kappa-opal.vercel.app/uploads/${product.images[1]}`}
                       alt={product.name}
                       className="product-thumb"
                     />
                     <img
-                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[2]}`}
+                      src={`https://e-commerce-website-kappa-opal.vercel.app/uploads/${product.images[2]}`}
                       alt={product.name}
                       className="product-thumb"
                     />
@@ -49,26 +49,6 @@ const AdminProductTable = ({ products, onDelete, onEdit, onView }) => {
                   <td>${product.discountPrice}</td>
                   <td>{product.category}</td>
                   <td>{product.quantity}</td>
-                  {/* <td className="d-flex gap-2 justify-content-center align-items-center">
-                    <button
-                      className="btn btn-sm btn-danger"
-                      onClick={() => onDelete(product._id)}
-                    >
-                      <i className="bi bi-trash"></i>
-                    </button>
-
-                    <button className="btn btn-sm btn-primary"
-                    onClick={() => onEdit(product._id)}
-                    >
-                      <i className="bi bi-pencil"></i>
-                    </button>
-                    <button className="btn btn-sm btn-info"
-                    onClick={() => onView(product._id)}
-                    >
-                      <i className="bi bi-eye"></i>
-                    </button>
-                  </td> */}
-
                   <td>
                     <div className="btn-group">
                       <button

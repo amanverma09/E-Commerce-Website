@@ -14,12 +14,12 @@ const ProductDetail = () => {
   const [selectedSize, setSelectedSize] = useState("");
   useEffect(() => {
     axios
-      .get(`https://e-commerce-website-backend-9cwr.onrender.com/api/products/${id}`)
+      .get(`https://e-commerce-website-kappa-opal.vercel.app/api/products/${id}`)
       .then((res) => {
         setProduct(res.data);
         setSelectedSize(res.data.size);
         if (res.data.images?.length) {
-          setMainImage(`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${res.data.images[0]}`);
+          setMainImage(`https://e-commerce-website-kappa-opal.vercel.app/uploads/${res.data.images[0]}`);
         }
       })
       .catch((err) => console.error(err));
@@ -28,7 +28,7 @@ const ProductDetail = () => {
   const handleSizeChange = async (size) => {
     setSelectedSize(size);
     try {
-      await axios.put(`https://e-commerce-website-backend-9cwr.onrender.com/api/products/${id}/size`, {
+      await axios.put(`https://e-commerce-website-kappa-opal.vercel.app/api/products/${id}/size`, {
         size,
       });
       alert("Size updated successfully!");
@@ -39,7 +39,7 @@ const ProductDetail = () => {
   };
    const handleAddToCart = async () => {
     try {
-      await axios.post("https://e-commerce-website-backend-9cwr.onrender.com/api/cart", {
+      await axios.post("https://e-commerce-website-kappa-opal.vercel.app/api/cart", {
         productId: product._id,
         size: selectedSize,
         quantity: 1,
@@ -72,13 +72,13 @@ const ProductDetail = () => {
               {product.images?.map((img, i) => (
                 <img
                   key={i}
-                  src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${img}`}
+                  src={`https://e-commerce-website-kappa-opal.vercel.app/uploads/${img}`}
                   alt={`thumb-${i}`}
                   className={`thumb-img ${
                     mainImage.endsWith(img) ? "active" : ""
                   }`}
                   onClick={() =>
-                    setMainImage(`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${img}`)
+                    setMainImage(`https://e-commerce-website-kappa-opal.vercel.app/uploads/${img}`)
                   }
                 />
               ))}
