@@ -16,6 +16,11 @@ app.use("/api/products", productRoutes);
 // Cart Routes
 app.use("/api/cart", cartRoutes);
 
+// for check vercel
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
 // MongoDB Connection
 mongoose
   .connect(process.env.MONGO_URL)
