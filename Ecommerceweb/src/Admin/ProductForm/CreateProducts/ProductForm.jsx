@@ -49,7 +49,7 @@
 //       (key) => images[key] && data.append(key, images[key])
 //     );
 
-//     await axios.post("http://localhost:5000/api/products", data, {
+//     await axios.post("https://e-commerce-website-backend-9cwr.onrender.com/api/products", data, {
 //       headers: { "Content-Type": "multipart/form-data" },
 //     });
 
@@ -198,7 +198,7 @@ const ProductForm = () => {
       const fetchProduct = async () => {
         try {
           const response = await axios.get(
-            `http://localhost:5000/api/products/${id}`
+            `https://e-commerce-website-backend-9cwr.onrender.com/api/products/${id}`
           );
           const product = response.data;
 
@@ -301,12 +301,12 @@ const ProductForm = () => {
 
     try {
       if (isEditMode) {
-        await axios.put(`http://localhost:5000/api/products/${id}`, data, {
+        await axios.put(`https://e-commerce-website-backend-9cwr.onrender.com/api/products/${id}`, data, {
           headers: { "Content-Type": "multipart/form-data" },
         });
         alert("Product Updated Successfully!");
       } else {
-        await axios.post("http://localhost:5000/api/products", data, {
+        await axios.post("https://e-commerce-website-backend-9cwr.onrender.com/api/products", data, {
           headers: { "Content-Type": "multipart/form-data" },
         });
         alert("Product Added Successfully!");
@@ -479,7 +479,7 @@ const ProductForm = () => {
                     style={{ width: "100px" }}
                   >
                     <img
-                      src={`http://localhost:5000/uploads/${img}`}
+                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${img}`}
                       alt={`product-${index}`}
                       className="img-thumbnail"
                       style={{
@@ -505,7 +505,7 @@ const ProductForm = () => {
                         <img
                           src={
                             imagePreviews[index] ||
-                            `http://localhost:5000/uploads/${existingImages[index]}`
+                            `https://e-commerce-website-backend-9cwr.onrender.com/uploads/${existingImages[index]}`
                           }
                           alt={`preview-${index}`}
                           className="img-fluid mb-2"

@@ -13,7 +13,7 @@ const ProductDetail = () => {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/products/${id}`
+          `https://e-commerce-website-backend-9cwr.onrender.com/api/products/${id}`
         );
         setProduct(response.data);
       } catch (error) {
@@ -69,7 +69,7 @@ const ProductDetail = () => {
               style={{ height: "400px", overflow: "hidden" }}
             >
               <img
-                src={`http://localhost:5000/uploads/${product.images[activeImage]}`}
+                src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[activeImage]}`}
                 alt={product.name}
                 className="img-fluid w-100 h-100 object-fit-cover"
               />
@@ -99,7 +99,7 @@ const ProductDetail = () => {
                     }}
                   >
                     <img
-                      src={`http://localhost:5000/uploads/${img}`}
+                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${img}`}
                       alt={`${product.name} view ${index + 1}`}
                       className="img-fluid w-100 h-100 object-fit-cover"
                     />

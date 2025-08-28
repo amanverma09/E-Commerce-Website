@@ -28,17 +28,17 @@ const AdminProductTable = ({ products, onDelete, onEdit, onView }) => {
                 <tr key={product._id}>
                   <td style={{ display: "flex", gap: "10px" }}>
                     <img
-                      src={`http://localhost:5000/uploads/${product.images[0]}`}
+                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[0]}`}
                       alt={product.name}
                       className="product-thumb"
                     />
                     <img
-                      src={`http://localhost:5000/uploads/${product.images[1]}`}
+                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[1]}`}
                       alt={product.name}
                       className="product-thumb"
                     />
                     <img
-                      src={`http://localhost:5000/uploads/${product.images[2]}`}
+                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[2]}`}
                       alt={product.name}
                       className="product-thumb"
                     />

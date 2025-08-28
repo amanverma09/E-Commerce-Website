@@ -11,7 +11,7 @@ const Cart = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/cart")
+      .get("https://e-commerce-website-backend-9cwr.onrender.com/api/cart")
       .then((res) => setCartItems(res.data))
       .catch((err) => console.error(err));
   }, []);
@@ -30,13 +30,13 @@ const Cart = () => {
     setCartItems(updatedItems);
     const updatedItem = updatedItems.find((i) => i._id === id);
 
-    await axios.put(`http://localhost:5000/api/cart/update/${id}`, {
+    await axios.put(`https://e-commerce-website-backend-9cwr.onrender.com/api/cart/update/${id}`, {
       quantity: updatedItem.quantity,
     });
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:5000/api/cart/${id}`);
+    await axios.delete(`https://e-commerce-website-backend-9cwr.onrender.com/api/cart/${id}`);
     setCartItems(cartItems.filter((item) => item._id !== id));
   };
 
@@ -98,7 +98,7 @@ const Cart = () => {
                     <div className="col-md-3 col-4">
                       <NavLink to={`/product/${item.productId._id}`}>
                         <img
-                          src={`http://localhost:5000/uploads/${item.productId.images[0]}`}
+                          src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${item.productId.images[0]}`}
                           alt={item.productId.name}
                           className="img-fluid cart-item-image"
                         />

@@ -13,7 +13,7 @@ const Checkout = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/cart")
+      .get("https://e-commerce-website-backend-9cwr.onrender.com/api/cart")
       .then((res) => setCartItems(res.data))
       .catch((err) => console.error(err));
   }, []);
@@ -33,7 +33,7 @@ const Checkout = () => {
     );
 
     const discount = price - discountPrice;
-    const protectPromiseFee = cartItems.length * 50; // Example fee calculation
+    const protectPromiseFee = cartItems.length * 50;
 
     return {
       price: price.toFixed(2),
@@ -169,56 +169,6 @@ const Checkout = () => {
                 </div>
               </motion.div>
             </div>
-
-            {/* Right Side - Order Summary */}
-            {/* <div className="col-lg-5">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.6 }}
-                className="checkout-card"
-              >
-                <h4 className="section-title">Order Summary</h4>
-                <ul className="list-group mb-3">
-                  <li className="list-group-item d-flex justify-content-between">
-                    <span>Pendant Chandelier Light</span>
-                    <strong>$28.72</strong>
-                  </li>
-                  <li className="list-group-item d-flex justify-content-between">
-                    <span>High Quality Vase Bottle</span>
-                    <strong>$35.72</strong>
-                  </li>
-                  <li className="list-group-item d-flex justify-content-between">
-                    <span>Reece Seater Sofa</span>
-                    <strong>$28.72</strong>
-                  </li>
-                </ul>
-
-                <div className="d-flex justify-content-between">
-                  <span>Subtotal</span>
-                  <strong>$93.16</strong>
-                </div>
-                <div className="d-flex justify-content-between">
-                  <span>Shipping</span>
-                  <strong>$5.00</strong>
-                </div>
-                <hr />
-                <div className="d-flex justify-content-between fs-5 fw-bold">
-                  <span>Total</span>
-                  <span className="highlight">$98.16</span>
-                </div>
-
-            
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="btn place-order-btn w-100 mt-4 py-2 fw-bold"
-                >
-                  Place Order
-                </motion.button>
-              </motion.div>
-            </div> */}
-
             {/* Price Details - Right Sidebar */}
             <div className="col-lg-4">
               <div className="price-details-card">
@@ -228,11 +178,6 @@ const Checkout = () => {
                   <span>Price ({cartItems.length} items)</span>
                   <span>${totals.price}</span>
                 </div>
-
-                {/* <div className="price-row">
-                  <span>Discount</span>
-                  <span className="text-success">-${totals.discount}</span>
-                </div> */}
 
                 <div className="price-row">
                   <span>Protect Promise Fee</span>

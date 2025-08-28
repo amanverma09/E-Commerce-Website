@@ -22,7 +22,7 @@ export default function NewProducts2() {
   // Fetch products from backend
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("https://e-commerce-website-backend-9cwr.onrender.com/api/products")
       .then((res) => {
         console.log(res.data);
         setProducts(res.data);
@@ -65,12 +65,12 @@ export default function NewProducts2() {
                 <div className="product-img">
                   <div className="hover-img d-flex">
                     <img
-                      src={`http://localhost:5000/uploads/${product.images[0]}`}
+                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[0]}`}
                       alt={product.name}
                       className="img-fluid img-1"
                     />
                     <img
-                      src={`http://localhost:5000/uploads/${product.images[1]}`}
+                      src={`https://e-commerce-website-backend-9cwr.onrender.com/uploads/${product.images[1]}`}
                       alt={product.name}
                       className="img-fluid img-2"
                     />

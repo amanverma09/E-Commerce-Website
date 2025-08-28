@@ -1,64 +1,12 @@
-// import React, { useEffect, useState } from "react";
-// import axios from "axios";
-// import AdminProductTable from "./AdminProductTable";
-
 import axios from "axios";
-import AdminProductTable from "./AdminProductTable";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-
-// const AdminTableConfig = () => {
-//   const [products, setProducts] = useState([]);
-
-//   // Fetch products
-//   const fetchProducts = async () => {
-//     try {
-//       const res = await axios.get("http://localhost:5000/api/products");
-//       setProducts(res.data);
-//     } catch (err) {
-//       console.error("Error fetching products", err);
-//     }
-//   };
-
-//   // Delete product
-//   const handleDelete = async (id) => {
-//     if (window.confirm("Are you sure you want to delete this product?")) {
-//       await axios.delete(`http://localhost:5000/api/products/${id}`);
-//       fetchProducts(); // Refresh list
-//     }
-//   };
-//     // Edit product
-//     const handleEdit = (id) => {
-//       // Navigate to edit page or open edit modal
-//       console.log("Edit product with ID:", id);
-//     };
-
-//     // View product
-//     const handleView = (id) => {
-//       // Navigate to view page or open view modal
-//       console.log("View product with ID:", id);
-//     };
-
-//   useEffect(() => {
-//     fetchProducts();
-//   }, []);
-
-//   return (
-//     <div className="container mt-4">
-//       <h2 className="mb-3">Admin Dashboard</h2>
-//       <AdminProductTable products={products} onDelete={handleDelete} onEdit={handleEdit} onView={handleView} />
-//     </div>
-//   );
-// };
-
-// export default AdminTableConfig;
 
 const AdminTableConfig = () => {
   const [products, setProducts] = useState([]);
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/products");
+      const res = await axios.get("https://e-commerce-website-backend-9cwr.onrender.com/api/products");
       setProducts(res.data);
     } catch (err) {
       console.error("Error fetching products", err);
@@ -68,7 +16,7 @@ const AdminTableConfig = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this product?")) {
       try {
-        await axios.delete(`http://localhost:5000/api/products/${id}`);
+        await axios.delete(`https://e-commerce-website-backend-9cwr.onrender.com/api/products/${id}`);
         fetchProducts();
         alert("Product deleted successfully!");
       } catch (error) {
