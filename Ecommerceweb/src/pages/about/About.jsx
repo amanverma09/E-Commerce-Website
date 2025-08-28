@@ -1,11 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./About.css";
-import bannerImage from "../../assets/page-banner.jpg"; // adjust path
-import image1 from "../../assets/image-1.jpg"; // adjust path
-import image2 from "../../assets/image-2.jpg"; // adjust path
-import image3 from "../../assets/image-3.jpg"; // adjust path
-import image4 from "../../assets/image-4.jpg"; // adjust path
+import bannerImage from "../../assets/page-banner.jpg"; 
+import image1 from "../../assets/image-1.jpg"; 
+import image2 from "../../assets/image-2.jpg"; 
+import image3 from "../../assets/image-3.jpg"; 
+import image4 from "../../assets/image-4.jpg"; 
 import TestimonialSection from "../../Components/Testimonal/TestimonialSection";
 
 const About = () => {

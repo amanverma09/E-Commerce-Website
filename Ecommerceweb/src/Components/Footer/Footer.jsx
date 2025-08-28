@@ -1,4 +1,3 @@
-// src/components/Footer.jsx
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";

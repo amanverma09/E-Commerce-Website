@@ -3,26 +3,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./Testimonal.css"; // custom styles
+import "./Testimonal.css";
+import teddy from "../../assets/chota_teddy-1.avif";
+import teddy2 from "../../assets/chota_teddy-3.avif";
 
 const testimonials = [
   {
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam.",
     author: "Taelynn Thorpe",
     designation: "Customer",
-    image: "/assets/images/author-1.jpg",
+    image: teddy,
   },
   {
     text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     author: "John Smith",
     designation: "Customer",
-    image: "/assets/images/author-2.jpg",
+    image: teddy2,
   },
   {
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     author: "Sarah Parker",
     designation: "Customer",
-    image: "/assets/images/author-3.jpg",
+    image: teddy,
   },
 ];
 
@@ -41,7 +43,7 @@ export default function TestimonialSection() {
               <div className="single-testimonial text-center">
                 <img
                   className="quote"
-                  src="/assets/images/icon/quote.png"
+                  src={teddy}
                   alt="Quote"
                 />
                 <p>{t.text}</p>

@@ -1,17 +1,7 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NewProducts2 from "../Newproduct/NewProducts2";
-// import NewProducts from "../Newproduct/NewProducts";
-import {
-  Navbar,
-  Nav,
-  Container,
-  Row,
-  Col,
-  Button,
-  Carousel,
-} from "react-bootstrap";
-import { FaSearch, FaHeart, FaShoppingCart } from "react-icons/fa";
+import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.css";
@@ -22,7 +12,7 @@ import slide from "../../assets/slider-item-2.webp";
 import slide2 from "../../assets/slider-item-3.webp";
 import sofa from "../../assets/sofa.jpg";
 import CategorySlider from "../Category/CategorySlider";
-import lamp from "../../assets/lamp-2.avif";
+import TestimonialSection from "../Testimonal/TestimonialSection";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -30,8 +20,6 @@ function App() {
 
   return (
     <>
-      {/* Navbar */}
-
       {/* Hero Carousel */}
       <Carousel
         fade
@@ -154,8 +142,8 @@ function App() {
         </Container>
       </section>
       <CategorySlider />
-      {/* <NewProducts /> */}
       <NewProducts2 />
+      <TestimonialSection />
     </>
   );
 }

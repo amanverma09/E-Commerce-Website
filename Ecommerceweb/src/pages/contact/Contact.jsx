@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
-import bannerImage from "../../assets/page-banner.jpg"; // adjust path
-import contact from "../../assets/contact-info.jpg"; // adjust path
+import bannerImage from "../../assets/page-banner.jpg"; 
+import contact from "../../assets/contact-info.jpg"; 
 
 const Contact = () => {
   return (
