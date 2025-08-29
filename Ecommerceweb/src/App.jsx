@@ -59,7 +59,7 @@ function App() {
     {
       path: "/admin",
       element: <AdminDashboard />,
-      errorElement: <ErrorPage />,
+      // errorElement: <ErrorPage />,
       children: [
         {
           path: "/admin",

@@ -1,4 +1,3 @@
-// src/Admin/AdminProductTable.jsx
 import React from "react";
 import PropTypes from "prop-types";
 import "./AdminProductTable.css";

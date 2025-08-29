@@ -1,12 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const AdminTableConfig = () => {
   const [products, setProducts] = useState([]);
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("https://e-commerce-website-kappa-opal.vercel.app/api/products");
+      const res = await axios.get(
+        "https://e-commerce-website-kappa-opal.vercel.app/api/products"
+      );
       setProducts(res.data);
     } catch (err) {
       console.error("Error fetching products", err);
@@ -16,7 +19,9 @@ const AdminTableConfig = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this product?")) {
       try {
-        await axios.delete(`https://e-commerce-website-kappa-opal.vercel.app/api/products/${id}`);
+        await axios.delete(
+          `https://e-commerce-website-kappa-opal.vercel.app/api/products/${id}`
+        );
         fetchProducts();
         alert("Product deleted successfully!");
       } catch (error) {
